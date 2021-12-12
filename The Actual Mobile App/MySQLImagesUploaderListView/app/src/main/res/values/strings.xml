@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Klassyque Kreations</string>
+    <string name="artist_list">Art List</string>
+    <string name="artist_app">KK App</string>
+    <string name="description">Art Description</string>
+    <string name="name">Name</string>
+    <string name="choose_photo">Choose Photo..</string>
+    <string name="send">Send</string>
+    <string name="view_all">View All</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="art_description">Art Description</string>
+    <string name="email">Input Email</string>
+    <string name="password">Input Password</string>
+    <string name="login">Login</string>
+    <string name="upload_your_art">Upload Your Art</string>
+    <string name="register">Register</string>
+    <string name="open_slide_show">SLIDE SHOW</string>
+    <string name="upload">Upload</string>
+    <string name="view_uploads">View Uploads</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="capture_image">CAPTURE IMAGE</string>
+    <string name="save_image">SAVE IMAGE</string>
+    <string name="take_save_photo">TAKE PHOTO</string>
+    <string name="logging_in">Are you logging in as:</string>
+    <string name="an_artist">An Artist</string>
+    <string name="Or">Or</string>
+    <string name="a_client">A Client</string>
+</resources>

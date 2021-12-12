@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/media/dee/54775f70-45ce-453d-9514-91abb103b39d/Android studio projects/trial/The Actual Mobile App/MySQLImagesUploaderListView/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "/home/dee/.gradle/caches/transforms-3/43711b72eaf2f529e5b9b1576380fb27/transformed/appcompat-1.3.1/res/values-v18/values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+#Sun Dec 12 21:16:59 EAT 2021
+base.2=/media/dee/54775f70-45ce-453d-9514-91abb103b39d/Android studio projects/trial/The Actual Mobile App/MySQLImagesUploaderListView/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
+path.2=5/classes.dex
+base.1=/media/dee/54775f70-45ce-453d-9514-91abb103b39d/Android studio projects/trial/The Actual Mobile App/MySQLImagesUploaderListView/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+path.1=0/classes.dex
+base.0=/media/dee/54775f70-45ce-453d-9514-91abb103b39d/Android studio projects/trial/The Actual Mobile App/MySQLImagesUploaderListView/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex
