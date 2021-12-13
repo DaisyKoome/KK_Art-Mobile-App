@@ -18,14 +18,14 @@ public class ClientRegisterActivity extends AppCompatActivity {
     EditText editTextNationalId2, editTextFirstName2, editTextLastName2, editTextEmail2,
             editTextPassword2, editTextConPassword2, editTextPhoneNo2;
     Button register_user2;
-    PasswordDatabase myDatabase2;
+    ClientPasswordDatabase myDatabase2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_register);
 
-        myDatabase2 = new PasswordDatabase(this);
+        myDatabase2 = new ClientPasswordDatabase(this);
 
         editTextNationalId2  = findViewById(R.id.national_id2);
         editTextFirstName2 = findViewById(R.id.fname2);

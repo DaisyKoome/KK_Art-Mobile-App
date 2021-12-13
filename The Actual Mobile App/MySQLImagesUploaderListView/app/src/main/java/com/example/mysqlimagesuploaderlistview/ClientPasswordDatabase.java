@@ -12,12 +12,12 @@ public class ClientPasswordDatabase extends SQLiteOpenHelper {
 
     public static final String DATABASE_NAME = "users";
     public static final String TABlE_NAME = "client";
-    public static final String COL_2 = "NATIONAL_ID";
-    public static final String COL_3 = "FIRST_NAME";
-    public static final String COL_4 = "LAST_NAME";
-    public static final String COL_5 = "EMAIL";
-    public static final String COL_6 = "PASSWORD";
-    public static final String COL_7 = "PHONE_NO";
+    public static final String COL_2 = "C_NATIONAL_ID";
+    public static final String COL_3 = "C_FIRST_NAME";
+    public static final String COL_4 = "C_LAST_NAME";
+    public static final String COL_5 = "C_EMAIL";
+    public static final String COL_6 = "C_PASSWORD";
+    public static final String COL_7 = "C_PHONE_NO";
 
     public ClientPasswordDatabase(@Nullable Context context) {
         super(context, DATABASE_NAME, null, 1);
@@ -26,7 +26,7 @@ public class ClientPasswordDatabase extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table " + TABlE_NAME +
-                "(ARTIST_ID INTEGER PRIMARY KEY AUTOINCREMENT, NATIONAL_ID TEXT, FIRST_NAME TEXT, LAST_NAME TEXT, EMAIL TEXT UNIQUE, PASSWORD TEXT, PHONE_NO TEXT)");
+                "(CLIENT_ID INTEGER PRIMARY KEY AUTOINCREMENT, C_NATIONAL_ID TEXT, C_FIRST_NAME TEXT, C_LAST_NAME TEXT, C_EMAIL TEXT UNIQUE, C_PASSWORD TEXT, C_PHONE_NO TEXT)");
     }
 
     @Override
@@ -36,15 +36,15 @@ public class ClientPasswordDatabase extends SQLiteOpenHelper {
     }
 
     //Registration handler
-    public boolean insertData(String national_id, String first_name, String last_name, String email, String password, String phone_no) {
+    public boolean insertData(String national_id2, String first_name2, String last_name2, String email2, String password2, String phone_no2) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(COL_2, national_id);
-        contentValues.put(COL_3, first_name);
-        contentValues.put(COL_4, last_name);
-        contentValues.put(COL_5, email);
-        contentValues.put(COL_6, password);
-        contentValues.put(COL_7, phone_no);
+        contentValues.put(COL_2, national_id2);
+        contentValues.put(COL_3, first_name2);
+        contentValues.put(COL_4, last_name2);
+        contentValues.put(COL_5, email2);
+        contentValues.put(COL_6, password2);
+        contentValues.put(COL_7, phone_no2);
         long result = db.insert(TABlE_NAME, null, contentValues);
         if (result == -1)
             return false;
@@ -53,9 +53,9 @@ public class ClientPasswordDatabase extends SQLiteOpenHelper {
     }
 
     //Login handler
-    public Cursor login_user(String email) {
+    public Cursor login_user(String email2) {
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor res = db.rawQuery("SELECT * FROM " + TABlE_NAME + " WHERE EMAIL='" + email + "';", null);
+        Cursor res = db.rawQuery("SELECT * FROM " + TABlE_NAME + " WHERE C_EMAIL='" + email2 + "';", null);
         return res;
     }
 

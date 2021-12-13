@@ -1,8 +1,8 @@
 package com.example.mysqlimagesuploaderlistview;
 
-import static com.example.mysqlimagesuploaderlistview.PasswordDatabase.COL_3;
-import static com.example.mysqlimagesuploaderlistview.PasswordDatabase.COL_4;
-import static com.example.mysqlimagesuploaderlistview.PasswordDatabase.COL_6;
+import static com.example.mysqlimagesuploaderlistview.ClientPasswordDatabase.COL_3;
+import static com.example.mysqlimagesuploaderlistview.ClientPasswordDatabase.COL_4;
+import static com.example.mysqlimagesuploaderlistview.ClientPasswordDatabase.COL_6;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -27,7 +27,7 @@ public class ClientLoginActivity extends AppCompatActivity {
     Button loginButton2;
     EditText emailET2;
     EditText passwordET2;
-    PasswordDatabase passwordDB2;
+    ClientPasswordDatabase passwordDB2;
 
     Timer timer2 = new Timer();
 
@@ -36,7 +36,7 @@ public class ClientLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_login);
 
-        passwordDB2 = new PasswordDatabase(this);
+        passwordDB2 = new ClientPasswordDatabase(this);
 
         goto_reg2 = findViewById(R.id.goto_reg2);
         loginButton2 = findViewById(R.id.login2);
